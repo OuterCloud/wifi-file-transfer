@@ -1,8 +1,14 @@
 """views.py"""
 
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.core.files.storage import FileSystemStorage
+
+
+def author(request):
+    """Author words"""
+
+    return JsonResponse({"message": "Hello, world!"})
 
 
 def upload_file(request):
